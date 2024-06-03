@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=https://drive.google.com/file/d/1h3KlwFKmfsruGU0ibKujWcfvC8_gPP22/view?usp=drive_link">
     <title>Redirecting...</title>
     <style>
         body {
@@ -32,6 +31,18 @@
             text-decoration: underline;
         }
     </style>
+    <script>
+        // Declare the URL as a global variable
+        var redirectUrl = "https://drive.google.com/file/d/15W6U_QMP_Pg-YB-pLvVc90Z6-bOkoCP0/view?usp=drive_link";
+
+        // Set the meta refresh tag dynamically
+        document.addEventListener("DOMContentLoaded", function() {
+            var metaRefresh = document.createElement('meta');
+            metaRefresh.httpEquiv = "refresh";
+            metaRefresh.content = "0; url=" + redirectUrl;
+            document.getElementsByTagName('head')[0].appendChild(metaRefresh);
+        });
+    </script>
 </head>
 <body>
     <p>Redirecting You to <b>Shaiaz Ali's Resume</b>...<br>
